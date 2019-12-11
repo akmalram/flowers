@@ -1,0 +1,340 @@
+header {
+  min-height: 80vh;
+  background-image: url(../img/header-bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 0 3000px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  position: relative;
+  color: #fff;
+}
+
+header .navbar {
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header .navbar.scrolled {
+  background: #fff;
+}
+
+header .navbar.scrolled .logo a {
+  color: #000;
+}
+
+header .navbar.scrolled .menu-link {
+  color: #000;
+  border-color: #000;
+}
+
+header .navbar.scrolled .menu-link:hover {
+  color: #fff;
+  background: #000;
+}
+
+header .navbar.scrolled .phone-call a {
+  color: #000;
+}
+
+header .navbar-container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+header .navbar-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  padding: 5px 0;
+}
+
+header .navbar .logo a {
+  font-size: 28px;
+  color: #fff;
+}
+
+header .navbar .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar .menu-item {
+  margin: 0 10px;
+}
+
+header .navbar .menu-link {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 6px 18px;
+  font-size: 18px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+header .navbar .menu-link:hover {
+  color: #000;
+  background: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .navbar .menu-link:focus {
+  outline: none;
+}
+
+header .navbar-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .navbar-contacts .phone-call {
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+header .navbar-contacts .phone-call a {
+  font-size: 20px;
+  color: #fff;
+}
+
+header .navbar-contacts .phone-call a:hover {
+  text-decoration: underline;
+}
+
+header .navbar-contacts .telegram a {
+  background-color: #0dace8;
+  color: #fff;
+  border: 3px solid #0dace8;
+  font-size: 16px;
+  padding: 4px 6px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header .navbar .menu-toggler {
+  z-index: 110;
+  position: relative;
+}
+
+header .navbar .menu-toggler .togglebtn {
+  z-index: 2000;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+header .navbar .menu-toggler .togglebtn .line {
+  display: block;
+  width: 1.75rem;
+  height: 2px;
+  background: #000;
+  line-height: 1;
+  position: relative;
+  display: block;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  transition: transform 0.2s ease-in, background-color 0.4s ease, -webkit-transform 0.2s ease-in;
+  border-radius: 5px;
+}
+
+header .navbar .menu-toggler .togglebtn .line::before, header .navbar .menu-toggler .togglebtn .line::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1.75rem;
+  height: 2px;
+  opacity: 1;
+  background: #000;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  border-radius: 5px;
+  transition: top 0.2s ease-in, opacity .2s ease-in, transform 0.2s 0.2s ease-out, background-color 0.4s ease, -webkit-transform 0.2s 0.2s ease-out;
+}
+
+header .navbar .menu-toggler .togglebtn .line::before {
+  top: -.5rem;
+}
+
+header .navbar .menu-toggler .togglebtn .line::after {
+  top: .5rem;
+}
+
+header .navbar .menu-toggler .togglebtn.active .line {
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  transition: transform 0.2s 0.2s ease-out, background-color 0.4s ease, -webkit-transform 0.2s 0.2s ease-out;
+}
+
+header .navbar .menu-toggler .togglebtn.active .line::before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  transition: top 0.2s ease-in, transform 0.2s 0.2s ease-out, background-color 0.4s ease, -webkit-transform 0.2s 0.2s ease-out;
+}
+
+header .navbar .menu-toggler .togglebtn.active .line::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s ease-in, opacity 0.2s 0.2s ease-out, background-color 0.4s ease;
+  transition: top 0.2s ease-in, opacity 0.2s 0.2s ease-out, background-color 0.4s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  header .navbar.slideleft {
+    background: #fff;
+  }
+  header .navbar.slideleft .menu {
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+    left: -100%;
+    min-height: 100vh;
+    background: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 150px;
+    padding-top: 10vh;
+    padding-left: 30px;
+  }
+  header .navbar.slideleft .menu.active {
+    left: 0;
+  }
+  header .navbar.slideleft .menu-list {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .navbar.slideleft .menu-item {
+    margin: 10px;
+  }
+  header .navbar.slideleft .menu-link {
+    color: #000;
+    border: none;
+    border-left: 2px solid #000;
+    padding: 10px;
+    border-radius: 0;
+  }
+  header .navbar.slideleft .menu-link:hover {
+    color: #000;
+    background: transparent;
+    -webkit-transform: none;
+            transform: none;
+  }
+  header .navbar.slideleft .menu-link:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+  header .navbar.slideleft .navbar-contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .navbar.slideleft .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .navbar.slideleft .menu-toggler {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: relative;
+    z-index: 1111;
+  }
+  header .navbar.slideleft .phone-call a,
+  header .navbar.slideleft .logo a {
+    color: #000;
+  }
+  header .navbar.slideleft .phone-call {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  header .navbar.slideleft .phone-call a {
+    color: #000;
+    background: #fff;
+    border: 3px solid #000;
+    font-size: 16px;
+    padding: 4px 6px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: inline-block;
+    border-radius: 3px;
+  }
+}
+
+header .header-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 100px;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-content .page-title {
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+  header .header-content .page-title {
+    margin-top: 5vh;
+  }
+}
+/*# sourceMappingURL=header.css.map */

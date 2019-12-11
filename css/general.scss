@@ -1,0 +1,241 @@
+@import './smart-grid';
+@import './mixins';
+
+@include reset();
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-size: 16px;
+    font-display: swap;
+    font-family: 'Vollkorn', serif;
+}
+
+.ps {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.row-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    @include wrapper();
+}
+
+.show-xs {
+    display: none !important;
+    @include xs(display, block !important);
+}
+
+.show-sm {
+    display: none !important;
+    @include sm(display, block !important);
+}
+
+.show-md {
+    display: none !important;
+    @include md(display, block !important);
+}
+
+.hide-sm {
+    @include sm-block {
+        display: none !important;
+    }
+}
+
+.hide-xs {
+    @include xs-block {
+        display: none !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.page-title {
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Marck Script', cursive;
+
+    @include md-block {
+        font-size: 65px;
+    }
+    @include sm-block {
+        font-size: 60px;
+    }
+    @include xs-block {
+        font-size: 57px;
+    }
+}
+
+.title-primary {
+    font-size: 50px;
+    text-align: center;
+
+    @include sm-block {
+        font-size: 34px;
+    }
+
+    @include xs-block {
+        font-size: 24px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+.title-secondary {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    @include sm-block {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    @include xs-block {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+button {
+    padding: 0;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    line-height: 1;
+    cursor: auto;
+}
+
+.title-tertiary {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+    @include sm-block {
+        font-size: 20px;
+    }
+}
+
+.desc-primary {
+    text-align: center;
+    font-size: 16px;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hr {
+    width: 300px;
+    height: 3px;
+    background-color: #000;
+    margin: 30px auto;
+}
+
+.row {
+    @include row-flex();
+}
+
+.text-center {
+    text-align: center;
+}
+
+.overhidden {
+    @include sm-block {
+        overflow: hidden;
+    }
+}
+
+button {
+    -webkit-appearance: none;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: justify;
+
+    @include lg-block {
+        font-size: 17px;
+    }
+
+    @include md-block {
+        font-size: 16px;
+    }
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+  }
+
+.btn-primary {
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 8px 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 3px;
+    perspective: 100px;
+    line-height: 1;
+    min-width: 120px;
+
+    &:hover {
+        background: rgba($color: #fff, $alpha: .5);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+
+    @media only screen and (max-width: 576px) {
+        min-width: auto;
+    }
+}
