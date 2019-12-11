@@ -37,22 +37,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const next = () => {
             if(cnt < cntOfimgs) {
-                header.style.backgroundImage = `url(../img/header-bg${++cnt}.jpg)`;
+                header.style.backgroundImage = `url(./img/header-bg${++cnt}.jpg)`;
             } else if(cnt == cntOfimgs) {
-                header.style.backgroundImage = `url(../img/header-bg${cnt = 1}.jpg)`;
+                header.style.backgroundImage = `url(./img/header-bg${cnt = 1}.jpg)`;
             }
         }
 
         const prev = () => {
             if(cnt == 1) {
-                header.style.backgroundImage = `url(../img/header-bg${cnt = cntOfimgs}.jpg)`;
+                header.style.backgroundImage = `url(./img/header-bg${cnt = cntOfimgs}.jpg)`;
             } else if(cnt <= cntOfimgs) {
-                header.style.backgroundImage = `url(../img/header-bg${--cnt}.jpg)`;
+                header.style.backgroundImage = `url(./img/header-bg${--cnt}.jpg)`;
             }
         }
 
         setInterval(() => {
-            prev();
+            next();
         }, 5000);
 
     }
