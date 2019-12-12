@@ -5,6 +5,7 @@
         position: fixed;
         width: 100%;
         transition: all .3s ease;
+        z-index: 100;
 
         &.scrolled {
             background: #fff;
