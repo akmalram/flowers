@@ -1,0 +1,166 @@
+footer {
+  padding: 80px 0;
+  background-color: #f3f3f3;
+  color: #000;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 30px 0;
+  }
+}
+
+footer .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer.footer-visible .footer-wrapper {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+footer .footer-wrapper {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+footer .title-tertiary {
+  text-align: left;
+  margin-top: 0;
+  color: #000000;
+}
+
+@media screen and (max-width: 576px) {
+  footer .title-tertiary {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .order-last {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+
+footer .col {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(25% - 30px);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .col {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .col {
+    width: calc(100% - 30px);
+  }
+}
+
+footer .logo a {
+  font-size: 24px;
+  color: #000;
+}
+
+footer .desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer .subscribe-form p {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+footer .subscribe-form input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #000;
+  padding: 0 22px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer .list .item {
+  margin-bottom: 5px;
+}
+
+footer .list .link {
+  font-size: 18px;
+  color: #000;
+}
+
+footer .list .link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  footer .list {
+    text-align: center;
+  }
+}
+
+footer .socials a {
+  color: #000;
+  font-size: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .socials a:hover {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+footer .telegram {
+  margin: 10px 0;
+}
+
+footer .telegram a {
+  font-size: 16px;
+}
+
+footer .contacts {
+  margin: 10px 0;
+}
+
+footer .contacts a,
+footer .contacts p {
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin: 4px 0;
+}
+
+footer .contacts a i,
+footer .contacts p i {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=footer.css.map */
