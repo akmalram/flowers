@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 $.ajax({
                     method: "POST",
-                    url: "send.php",
+                    url: "../send.php",
                     data: $(one).serialize(),
                 })
                 .done(function() {
