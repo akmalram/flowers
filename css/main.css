@@ -228,6 +228,14 @@ main {
   color: #939393;
 }
 
+.bouquets .item .price {
+  text-align: center;
+}
+
+.bouquets .item .btn-primary {
+  padding: 9px 15px;
+}
+
 .feedbacks {
   padding: 200px 0;
   text-align: center;
