@@ -25,6 +25,22 @@
 </head>
 
 <body>
+    <div class="modal modal-request">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <form action="/" class="form">
+                <h2 class="modal-heading">Оставить заявку</h2>
+                <input class="modal-input-name" type="text" name="name" placeholder="Ваше имя" required="true">
+                <input class="modal-input-phone" type="tel" name="phone" placeholder="Ваш номер" required="true">
+                <input class="modal-submit btn-primary" type="submit" value="Отправить">
+            </form>
+            <div class="done">
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTEuOTk5IDUxMS45OTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS45OTkgNTExLjk5OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiNBNUVCNzg7IiBkPSJNNDI3LjUzNCw3My4wODRsLTIyNC41MSwyMjQuNTFjLTYuMDUxLDYuMDUxLTE1Ljg2Myw2LjA1MS0yMS45MTQsMGwtOTYuNjQ1LTk2LjY0NUw4LjA5OSwyNzcuMzEzICBsMTQ1Ljc4NSwxNDUuNzg1YzEwLjEyNywxMC4xMjcsMjMuODYyLDE1LjgxNiwzOC4xODMsMTUuODE2bDAsMGMxNC4zMiwwLDI4LjA1Ny01LjY5LDM4LjE4Mi0xNS44MTZsMjczLjY1LTI3My42NUw0MjcuNTM0LDczLjA4NHoiLz4KPGcgc3R5bGU9Im9wYWNpdHk6MC4xOyI+Cgk8cGF0aCBkPSJNNDc4LjY0NiwxMjQuMTk2TDE4OS43NTQsNDEzLjA4N2MtNy45OTMsNy45OTItMTguMDQzLDEzLjQ0Mi0yOC45MDIsMTUuODcyYzkuMDY2LDYuNDI1LDE5Ljk1Niw5Ljk1NSwzMS4yMTUsOS45NTVsMCwwICAgYzE0LjMyLDAsMjguMDU3LTUuNjksMzguMTgyLTE1LjgxNmwyNzMuNjUtMjczLjY1TDQ3OC42NDYsMTI0LjE5NnoiLz4KPC9nPgo8cGF0aCBkPSJNMTkyLjA2OCw0NDcuMDE0Yy0xNi41ODcsMC0zMi4xODItNi40NTktNDMuOTEyLTE4LjE4OUwyLjM3MiwyODMuMDRjLTMuMTYzLTMuMTYzLTMuMTYzLTguMjkyLDAtMTEuNDU0bDc2LjM2Ni03Ni4zNjYgIGMzLjE2NC0zLjE2Myw4LjI5Mi0zLjE2MywxMS40NTUsMGwyOC42NjgsMjguNjY3YzMuMTYzLDMuMTYzLDMuMTYzLDguMjkyLDAsMTEuNDU0Yy0zLjE2NSwzLjE2My04LjI5MywzLjE2Mi0xMS40NTUsMGwtMjIuOTQtMjIuOTQgIGwtNjQuOTExLDY0LjkxMWwxNDAuMDU4LDE0MC4wNThjOC42NjksOC42NjksMjAuMTk1LDEzLjQ0MywzMi40NTYsMTMuNDQzYzEyLjI2LDAsMjMuNzg1LTQuNzc1LDMyLjQ1Ni0xMy40NDNsMTg2Ljk1MS0xODYuOTUyICBjMy4xNjMtMy4xNjMsOC4yOTEtMy4xNjQsMTEuNDU1LDBjMy4xNjMsMy4xNjMsMy4xNjMsOC4yOTIsMCwxMS40NTRMMjM1Ljk3OSw0MjguODI2ICBDMjI0LjI0OCw0NDAuNTU1LDIwOC42NTMsNDQ3LjAxNCwxOTIuMDY4LDQ0Ny4wMTR6Ii8+CjxwYXRoIGQ9Ik0xOTIuMDY4LDMxMC4yMzJjLTYuMzAzLDAtMTIuMjI4LTIuNDU0LTE2LjY4NC02LjkxMWwtNDUuMDY4LTQ1LjA2OGMtMy4xNjMtMy4xNjMtMy4xNjMtOC4yOTIsMC0xMS40NTQgIGMzLjE2NC0zLjE2Myw4LjI5Mi0zLjE2MywxMS40NTUsMGw0NS4wNjgsNDUuMDY4YzEuMzk2LDEuMzk2LDMuMjU0LDIuMTY1LDUuMjI5LDIuMTY1czMuODMzLTAuNzY5LDUuMjMtMi4xNjZMNDIxLjgwNiw2Ny4zNTcgIGMzLjE2NC0zLjE2Myw4LjI5Mi0zLjE2MywxMS40NTUsMGw3Ni4zNjYsNzYuMzY2YzEuNTE4LDEuNTE4LDIuMzcyLDMuNTc5LDIuMzcyLDUuNzI3cy0wLjg1Myw0LjIwOS0yLjM3Miw1LjcyN2wtNjMuNzg3LDYzLjc4NyAgYy0zLjE2NCwzLjE2My04LjI5MiwzLjE2Mi0xMS40NTUsMGMtMy4xNjMtMy4xNjMtMy4xNjMtOC4yOTIsMC0xMS40NTRsNTguMDYxLTU4LjA2bC02NC45MS02NC45MUwyMDguNzUyLDMwMy4zMjEgIEMyMDQuMjk1LDMwNy43NzcsMTk4LjM2OSwzMTAuMjMyLDE5Mi4wNjgsMzEwLjIzMnoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                <h2 class="modal-heading">Ваша заявка успешно отправлена!</h2>
+            </div>
+            <div class="close-btn">+</div>
+        </div>
+    </div>
     <header>
         <nav class="navbar slideleft">
             <div class="navbar-container">
@@ -69,7 +85,7 @@
                 <h1 class="page-title">Цветы в Ташкенте</h1>
                 <h2 class="title-primary">For your special occasions!</h2>
                 <div class="text-center">
-                    <a href="#" class="btn-primary">Button</a>
+                    <a href="#catalog" class="btn-primary">Каталог</a>
                 </div>
             </div>
         </div>
@@ -126,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="bouquets">
+        <div id="catalog" class="bouquets">
             <div class="container">
                 <h2 class="title-primary">Bouquets</h2>
                 <h3 class="title-tertiary">Veritatis et quasi architecto beatae vitae dicta sunt explicabo</h3>
@@ -142,7 +158,7 @@
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -157,7 +173,7 @@
                             </div>
                             <div>
                                 <p class="price">80.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +188,7 @@
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -187,7 +203,7 @@
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -202,7 +218,7 @@
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +233,7 @@
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
-                                <a class="btn-primary" href="#contacts">Заказать</a>
+                                <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -237,7 +253,7 @@
                 <div class="row-inner">
                     <div class="contact-form">
                         <h2 class="title-secondary">Оставьте заявку</h2>
-                        <form class="flex-between form">
+                        <form class="flex-between contacts-form form">
                             <label class="label-name">
                                 <input type="text" name="name" placeholder="Ваше имя" class="form-input input-name" required />
                                 <p class="errorField">
@@ -253,22 +269,6 @@
                                     <span class="empty">Пожалуйста заполните поле</span>
                                     <span class="letters">Поле не должно содержать букв</span>
                                     <span class="length">Не менее чем 9 символов</span>
-                                </p>
-                            </label>
-                            <label class="label-email">
-                                <input type="email" name="email" placeholder="Ваш email" class="form-input input-email"
-                                    required />
-                                <p class="errorField">
-                                    <span class="empty">Пожалуйста заполните поле</span>
-                                    <span class="length">Не менее чем 7 символов</span>
-                                    <span class="validEmail">Введите валидный email адресс!</span>
-                                </p>
-                            </label>
-                            <label class="label-textarea">
-                                <textarea name="message" placeholder="Ваше сообщение" class="form-input input-textarea"
-                                    required></textarea>
-                                <p class="errorField">
-                                    <span class="empty">Пожалуйста заполните поле</span>
                                 </p>
                             </label>
                             <div class="text-center">
@@ -304,9 +304,7 @@
                                 <div class="value">
                                     <div class="socials">
                                         <a href="#"><i class="fab fa-telegram"></i></a>
-                                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                                         <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
                                         <a href="#"><i class="fab fa-facebook"></i></a>
                                     </div>
                                 </div>
@@ -321,53 +319,6 @@
             </div>
         </div>
     </main>
-    <footer >
-        <div class="footer-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col order-last">
-                        <div class="logo">
-                            <a href="#">Pro-Marketing</a>
-                        </div>
-                        <p class="desc">Компания по продвижение <br> в интернете №1</p>
-                        <form class="subscribe-form" method="post">
-                            <p>Подпишитесь</p>
-                            <input type="email" placeholder="Ваш E-mail" name="email">
-                            <button type="submit" class="btn-primary">Подписаться</button>
-                        </form>
-                    </div>
-                    <div class="col">
-                        <h3 class="title-tertiary">Информация</h3>
-                        <ul class="list">
-                            <li class="item"><a href="#" class="link">О компании</a></li>
-                            <li class="item"><a href="#" class="link">Отзывы</a></li>
-                            <li class="item"><a href="#" class="link">Стать парнером</a></li>
-                            <li class="item"><a href="#" class="link">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="col order-last">
-                        <h3 class="title-tertiary">Контакты</h3>
-                        <div class="contacts">
-                            <a target="_blank" href="tel:+998999999999"><i class="fas fa-phone"></i><span>+998(99) 999-99-99</span></a>
-                            <a target="_blank" href="mailto:info@company.uz"><i class="fas fa-envelope"></i><span>info@company.uz</span></a>
-                            <p><i class="fas fa-map-marker-alt"></i> Г. Ташкент ул. Тудем 123а</p>
-                        </div>
-                        <div class="telegram">
-                            <a target="_blank" href="https://t.me/telegram" class="btn-primary">
-                                <i class="fab fa-telegram"></i>
-                                <span class="text"><span>Написать в</span> Телеграм</span>
-                            </a>
-                        </div>
-                        <div class="socials flex-evenly">
-                            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

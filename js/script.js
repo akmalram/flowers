@@ -104,28 +104,52 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const modalToggler = (buttonClass, modalClass) => {
+        let btn = document.querySelectorAll(buttonClass),
+            modal = document.querySelector(modalClass),
+            closetBtn = document.querySelector(`${modalClass} .close-btn`),
+            modalBackground = document.querySelector(`${modalClass} .modal-background`);
+
+       if(modal) {
+        btn.forEach(one => {
+            one.addEventListener('click', () => {
+                modal.classList.add('active');
+            });
+        });
+
+        [closetBtn, modalBackground].forEach(one => {
+            one.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+        });
+       }
+    }
+
+    modalToggler('.modal-request-open', '.modal-request');
+
     scrollToAnchor();
     backgroundSlider();
     isScrolled();
     menuToggle();
 
     (() => {
-        const footer = document.querySelector('footer');
-        const coorY = footer.getBoundingClientRect().top + document.body.scrollTop;
+        const form = document.querySelector('.modal-request .form');
+        const form2 = document.querySelector('.contacts-form');
 
-        if (window.scrollY + 500 > coorY) {
-            footer.classList.add('footer-visible');
-        } else if (window.scrollY + 500 < coorY) {
-            footer.classList.remove('footer-visible');
-        }
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY + 500 > coorY) {
-                footer.classList.add('footer-visible');
-            } else if (window.scrollY + 500 < coorY) {
-                footer.classList.remove('footer-visible');
-            }
-        });
+        [form, form2].forEach(one => {
+            one.addEventListener('submit', (e) => {
+                e.preventDefault();
+                $.ajax({
+                    method: "POST",
+                    url: "send.php",
+                    data: $(one).serialize(),
+                })
+                .done(function() {
+                    one.parentNode.classList.add('done');
+                    one.reset();
+                });
+            });
+        })
     })();
 });
 

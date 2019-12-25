@@ -72,66 +72,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const validateEmail = () => {
-        const inputName = document.querySelector('.form .input-email');
-
-        inputName.addEventListener('blur', (e) => {
-            const el = e.target;
-            const data = el.value;
-            const nextel = el.nextElementSibling;
-
-            const cleanClasses = () => {
-                nextel.classList.remove('empty');
-                nextel.classList.remove('validEmail');
-                nextel.classList.remove('length');
-            }
-            cleanClasses(nextel);
-
-            if(data.length == 0) {
-                disableForm();
-                nextel.classList.add('empty');
-
-            }else if (!/.+@.+\..+/i.test(data)) {
-                disableForm();
-                nextel.classList.add('validEmail');
-
-            }else if (data.length < 7) {
-                disableForm();
-                nextel.classList.add('length');
-
-            } else {
-                enableForm();
-                cleanClasses();
-            }
-        });
-    }
-
-    const validateTextarea = () => {
-        const inputName = document.querySelector('.form .input-textarea');
-
-        inputName.addEventListener('blur', (e) => {
-            const el = e.target;
-            const data = el.value;
-            const nextel = el.nextElementSibling;
-
-            const cleanClasses = () => {
-                nextel.classList.remove('empty');
-            }
-            cleanClasses(nextel);
-
-            if(data.length == 0) {
-                disableForm();
-                nextel.classList.add('empty');
-
-            } else {
-                enableForm();
-                cleanClasses();
-            }
-        });
-    }
-
     validateName();
     validatePhone();
-    validateEmail();
-    validateTextarea();
 });
