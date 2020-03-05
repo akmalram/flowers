@@ -15,16 +15,23 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
     <!-- Js scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/form-validation.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/script.js"></script>
 
 </head>
 
 <body>
+    <div class="complete-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="icon">
+                <img src="./check.svg" alt="">
+                <h2>Ваша заявка принята! В ближайшее время мы свами свяжемся!</h2>
+            </div>
+        </div>
+    </div>
     <div class="modal modal-request">
         <div class="modal-background"></div>
         <div class="modal-content">
@@ -51,11 +58,12 @@
                     <div class="menu">
                         <h4 class="title-secondary show-md">Меню</h4>
                         <ul class="menu-list">
-                            <li class="menu-item"><a href="#" class="menu-link">Origins</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Syndicate</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Rogue</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Black Flag</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Unity</a></li>
+                            <li class="menu-item"><a href="#mom" class="menu-link">Для мамы</a></li>
+                            <li class="menu-item"><a href="#sister" class="menu-link">для сестры</a></li>
+                            <li class="menu-item"><a href="#wife" class="menu-link">для жены</a></li>
+                            <li class="menu-item"><a href="#daughter" class="menu-link">для дочери</a></li>
+                            <li class="menu-item"><a href="#girlfriend" class="menu-link">для девушки</a></li>
+                            <li class="menu-item"><a href="#mistress" class="menu-link">для любовницы</a></li>
                         </ul>
                     </div>
                     <div class="navbar-contacts">
@@ -94,47 +102,47 @@
         <div class="category-cards">
             <div class="container">
                 <div class="row">
-                    <div class="item">
-                        <h3 class="heading">Wedding <br> bouquets</h3>
-                    </div>
-                    <div class="item">
-                        <h3 class="heading">Love &amp; romance</h3>
-                    </div>
-                    <div class="item">
-                        <h3 class="heading">birthday bouquets</h3>
-                    </div>
+                    <a href="#mom" class="item">
+                        <h3 class="heading">Для семьи</h3>
+                    </a>
+                    <a href="#girlfriend" class="item">
+                        <h3 class="heading">Для девушки</h3>
+                    </a>
+                    <a href="#wife" class="item">
+                        <h3 class="heading">Для жены</h3>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="categories">
             <div class="container">
-                <h3 class="title-primary">CATEGORIES</h3>
+                <h3 class="title-primary">Категории</h3>
                 <div class="row-inner">
                     <div class="left"></div>
                     <div class="right">
                         <div class="row-inner">
                             <div class="item">
-                                <a href="#" class="heading">Congratulation</a>
+                                <a href="#mom" class="heading">Для мамы</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                             <div class="item">
-                                <a href="#" class="heading">corporate</a href="#">
+                                <a href="#sister" class="heading">Для сестры</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                             <div class="item">
-                                <a href="#" class="heading">sympathy</a href="#">
+                                <a href="#daughter" class="heading">Для дочери</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                             <div class="item">
-                                <a href="#" class="heading">funeral</a>
+                                <a href="#mom" class="heading">Для семьи</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                             <div class="item">
-                                <a href="#" class="heading">love &amp; romance</a href="#">
+                                <a href="#girlfriend" class="heading">Для девушки</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                             <div class="item">
-                                <a href="#" class="heading">family flowers</a href="#">
+                                <a href="#mistress" class="heading">Для любовницы (секретарши :))</a>
                                 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
                             </div>
                         </div>
@@ -144,17 +152,16 @@
         </div>
         <div id="catalog" class="bouquets">
             <div class="container">
-                <h2 class="title-primary">Bouquets</h2>
-                <h3 class="title-tertiary">Veritatis et quasi architecto beatae vitae dicta sunt explicabo</h3>
+                <h2 class="title-primary">Букеты</h2>
+                <h3 id="mom" class="title-tertiary">Для мамы</h3>
                 <div class="row">
                     <div class="item">
                         <div class="image">
-                            <img src="./img/bouquet1.jpg" alt="Букеты">
+                            <img src="./img/mom/mom-1.jpg" alt="Букеты">
                         </div>
                         <div class="content">
                             <div>
-                                <h4 class="name">A Pretty Pink</h4>
-                                <h3 href="#" class="b-category">Family</h3>
+                                <h4 class="name">Белый ландышь</h4>
                             </div>
                             <div>
                                 <p class="price">100.000 сум</p>
@@ -164,12 +171,362 @@
                     </div>
                     <div class="item">
                         <div class="image">
-                            <img src="./img/bouquet2.jpg" alt="Букеты">
+                            <img src="./img/mom/mom-2.jpg" alt="Букеты">
                         </div>
                         <div class="content">
                             <div>
-                                <h4 class="name">Beauty Calla Lily Bouquet</h4>
-                                <h3 href="#" class="b-category">Family</h3>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mom/mom-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mom/mom-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="sister" class="title-tertiary">Для сестры</h3>
+                <div class="row">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/sister/sister-1.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">150.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/sister/sister-2.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">590.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/sister/sister-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">560.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/sister/sister-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">1.500.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="wife" class="title-tertiary">Для жены</h3>
+                <div class="row">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/wife/wife-1.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/wife/wife-2.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/wife/wife-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">150.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/wife/wife-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">100.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="daughter" class="title-tertiary">Для дочери</h3>
+                <div class="row per-3">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/daughter/daughter-1.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">55.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/daughter/daughter-2.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">750.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/daughter/daughter-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">320.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/daughter/daughter-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">150.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/daughter/daughter-5.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">550.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="girlfriend" class="title-tertiary">Для девушки</h3>
+                <div class="row per-3">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/girlfriend/girlfriend-1.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">1.000.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/girlfriend/girlfriend-2.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">140.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/girlfriend/girlfriend-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">650.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/girlfriend/girlfriend-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">140.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/girlfriend/girlfriend-5.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">150.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="mistress" class="title-tertiary">Для любовницы</h3>
+                <div class="row per-3">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mistress/mistress-1.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">7.400.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mistress/mistress-2.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">470.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mistress/mistress-3.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
+                            </div>
+                            <div>
+                                <p class="price">780.000 сум</p>
+                                <a class="btn-primary modal-request-open">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./img/mistress/mistress-4.jpg" alt="Букеты">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h4 class="name">Белый ландышь</h4>
                             </div>
                             <div>
                                 <p class="price">80.000 сум</p>
@@ -179,145 +536,56 @@
                     </div>
                     <div class="item">
                         <div class="image">
-                            <img src="./img/bouquet3.jpg" alt="Букеты">
+                            <img src="./img/mistress/mistress-5.jpg" alt="Букеты">
                         </div>
                         <div class="content">
                             <div>
-                                <h4 class="name">A Pretty Pink</h4>
-                                <h3 href="#" class="b-category">Family</h3>
+                                <h4 class="name">Белый ландышь</h4>
                             </div>
                             <div>
-                                <p class="price">100.000 сум</p>
-                                <a class="btn-primary modal-request-open">Заказать</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="./img/bouquet4.jpg" alt="Букеты">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h4 class="name">A Pretty Pink</h4>
-                                <h3 href="#" class="b-category">Family</h3>
-                            </div>
-                            <div>
-                                <p class="price">100.000 сум</p>
-                                <a class="btn-primary modal-request-open">Заказать</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="./img/bouquet5.jpg" alt="Букеты">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h4 class="name">A Pretty Pink</h4>
-                                <h3 href="#" class="b-category">Family</h3>
-                            </div>
-                            <div>
-                                <p class="price">100.000 сум</p>
-                                <a class="btn-primary modal-request-open">Заказать</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="./img/bouquet6.jpg" alt="Букеты">
-                        </div>
-                        <div class="content">
-                            <div>
-                                <h4 class="name">A Pretty Pink</h4>
-                                <h3 href="#" class="b-category">Family</h3>
-                            </div>
-                            <div>
-                                <p class="price">100.000 сум</p>
+                                <p class="price">650.000 сум</p>
                                 <a class="btn-primary modal-request-open">Заказать</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="feedbacks bg-parallax">
-            <div class="img">
-                <img src="./img/they.jpg" alt="they">
-            </div>
-            <div class="heading">Cayleigh and Adam</div>
-            <p class="text">Thank you so much for making our wedding day so special and memorable! It was a pleasure working with you and I will recommend you to all future brides! Thank you again!</p>
         </div>
         <div id="contacts" class="contacts">
-            <div class="section-content">
-                <h2 class="title-primary">Контакты</h2>
-                <div class="row-inner">
-                    <div class="contact-form">
-                        <h2 class="title-secondary">Оставьте заявку</h2>
-                        <form class="flex-between contacts-form form">
-                            <label class="label-name">
-                                <input type="text" name="name" placeholder="Ваше имя" class="form-input input-name" required />
-                                <p class="errorField">
-                                    <span class="empty">Пожалуйста заполните поле</span>
-                                    <span class="numbers">Поле не должно содержать номера</span>
-                                    <span class="length">Не менее чем 2 буквы</span>
-                                </p>
-                            </label>
-                            <label class="label-phone">
-                                <input type="tel" name="phone" placeholder="Ваш номер" class="form-input input-phone"
-                                    required />
-                                <p class="errorField">
-                                    <span class="empty">Пожалуйста заполните поле</span>
-                                    <span class="letters">Поле не должно содержать букв</span>
-                                    <span class="length">Не менее чем 9 символов</span>
-                                </p>
-                            </label>
-                            <div class="text-center">
-                                <button type="submit" disabled class="input-submit btn-primary">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="contact-info">
-                        <div class="row-inner">
-                            <div class="info-line">
-                                <h4 class="heading">Email</h4>
-                                <p class="value">info@example.com</p>
-                            </div>
-
-                            <div class="info-line">
-                                <h4 class="heading">Телефон</h4>
-                                <p class="value">+998(91) 123-45-67</p>
-                            </div>
-
-                            <div class="info-line">
-                                <h4 class="heading">Адрес</h4>
-                                <p class="value">г.Ташкент ул.Бродуэй 23a</p>
-                            </div>
-
-                            <div class="info-line">
-                                <h4 class="heading">Время работы</h4>
-                                <p class="value">
-                                    Пн-Пт 09:00 до 20:00 <br> Сб-Вс 10:00 до 20:00
-                                </p>
-                            </div>
-                            <div class="info-line">
-                                <h4 class="heading">Соц. сети</h4>
-                                <div class="value">
-                                    <div class="socials">
-                                        <a href="#"><i class="fab fa-telegram"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.296599061985!2d69.28018594350972!3d41.32416338534165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b342b20b795%3A0xa864984affd3e36a!2s46%D0%B0%20Amir%20Temur%20Avenue%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1575461591493!5m2!1sen!2s"
-                                allowfullscreen=""></iframe>
-                        </div>
-                    </div>
+            <div class="row-inner">
+                <div class="left">
+                     <div class="contacts-info flex-between">
+                         <div class="time">
+                             <h4><i class="far fa-clock"></i> Рабочее время</h4>
+                             <p>Будние дни: <span class="nowrap">9:00 - 20:00</span></p>
+                             <p>Суббота: <span class="nowrap">10:00 - 16:00</span></p>
+                         </div>
+                         <div class="visitka">
+                             <h4><i class="fas fa-map-marker-alt"></i> Адрес</h4>
+                             <p>г. Бруклин 23А</p>
+                             <p><a href="#">+1 (123) 123-12-12</a></p>
+                         </div>
+                     </div>
+                     <form class="contacts-form">
+                         <h3 class="title-tertiary">Оставьте заявку</h3>
+                         <input type="text" name="name" placeholder="Ваше имя" class="input" required>
+                         <input type="number" name="phone" placeholder="Ваш телефон" class="input" required>
+                         <button type="submit" class="btn-primary">Записаться</button>
+                     </form>
+                     <div class="socials">
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-facebook"></i></a>
+                         <a href="#"><i class="fab fa-vk"></i></a>
+                         <a href="#"><i class="fab fa-telegram"></i></a>
+                     </div>
+                </div>
+                <div class="right">
+                     <div class="map">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96764.76132053095!2d-73.99776980316916!3d40.72024444954617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1581314724778!5m2!1sen!2s" frameborder="0" allowfullscreen=""></iframe>
+                     </div>
                 </div>
             </div>
-        </div>
+         </div>
     </main>
 </body>
 

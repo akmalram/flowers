@@ -9,20 +9,20 @@
 
         &.scrolled {
             background: #fff;
-            border-bottom: 4px solid #000;
+            border-bottom: 4px solid #f77a9e;
         }
 
         &.scrolled .logo a {
-            color: #000;
+            color: #f77a9e;
         }
 
         &.scrolled .menu-link {
-            color: #000;
-            border-color: #000;
+            color: #f77a9e;
+            border-color: #f77a9e;
 
             &:hover {
                 color: #fff;
-                background: #000;
+                background: #f77a9e;
             }
         }
 
@@ -66,13 +66,13 @@
                 color: #fff;
                 border: 2px solid #fff;
                 padding: 6px 18px;
-                font-size: 18px;
+                font-size: 16px;
                 transition: all 300ms ease;
                 display: inline-block;
                 border-radius: 2px;
 
                 &:hover {
-                    color: #000;
+                    color: #f77a9e;
                     background: #fff;
                     transform: scale(1.2);
                 }

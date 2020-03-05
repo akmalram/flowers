@@ -172,6 +172,7 @@ img {
 .title-primary {
   font-size: 50px;
   text-align: center;
+  color: #f55e89;
 }
 
 @media screen and (max-width: 768px) {
@@ -194,7 +195,7 @@ img {
   font-size: 25px;
   line-height: 34px;
   font-weight: normal;
-  color: #333;
+  color: #f55e89;
   text-align: center;
   margin-bottom: 40px;
   margin-top: 20px;
@@ -232,7 +233,7 @@ button {
 
 .title-tertiary {
   font-size: 23px;
-  color: #333;
+  color: #f55e89;
   margin-bottom: 20px;
   margin-top: 10px;
   text-align: center;
@@ -352,7 +353,7 @@ button {
   color: #fff;
   font-size: 20px;
   padding: 15px 25px;
-  background-color: #111;
+  background-color: #f55e89;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -363,10 +364,12 @@ button {
   line-height: 1;
   min-width: 120px;
   text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .btn-primary:hover {
-  background: #333;
+  background: #f582a2;
 }
 
 .btn-primary:focus {
